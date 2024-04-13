@@ -26,6 +26,10 @@ body {
   margin: 5px;
 }
 
+.strike::after {
+  content: "✅";
+}
+
 .logo {
   width: calc(100vw - 20vh);
   height: 10vh;
@@ -116,6 +120,7 @@ main {
 
 footer {
   position: fixed;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,7 +166,7 @@ p {
   flex-direction: column;
   gap: 10px;
   overflow-y: scroll;
-  height: 70vh;
+  height: 60vh;
   width: calc(100vw - 75px);
   padding: 10px;
   background-color: #000000;
