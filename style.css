@@ -183,13 +183,14 @@ p {
 
 .todo {
   color: white;
-}
-
-.todo {
   font-size: 0.6rem;
   list-style-type: none;
 }
 
+h3 {
+  font-size: 1rem;
+  width: 100%;
+}
 .user {
   font-size: 0.8rem;
   color: white;
