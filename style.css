@@ -76,7 +76,7 @@ main {
   display: flex;
   z-index: 30;
   align-items: center;
-  height: 60vh;
+  height: 57vh;
   width: 100vw;
   position: relative;
   right: calc(-100vw + 50px);
@@ -127,7 +127,7 @@ footer {
   align-items: center;
   margin: auto;
   width: 100vw;
-  height: 5vh;
+  height: 8vh;
 }
 span {
   display: block;
@@ -198,6 +198,34 @@ h3 {
 }
 .user::first-letter {
   text-transform: uppercase;
+}
+
+.total {
+  display: flex;
+  color: white;
+  z-index: 60;
+  font-size: 30px;
+  height: 4vh;
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btnTotal {
+  text-decoration: none;
+  transition: 1s all ease-in-out;
+  font-size: 20px;
+  padding: 2px 40px;
+  font-family: arial;
+  color: #ffffff;
+  background-color: #116b9f;
+  border-radius: 24px;
+  border: 2px solid #ffffff;
+  box-shadow: 3px 3px 12px #444444;
 }
 
 @media screen and (min-width: 600px) {
