@@ -172,6 +172,8 @@ p {
   width: calc(100vw - 75px);
   padding: 10px;
   background-color: #000000;
+  scrollbar-width: thin; /* Vous pouvez ajuster la largeur ici, "auto" ou "thin" */
+  scrollbar-color: #116b9f transparent; /* Couleur du curseur et couleur du fond */
 }
 
 .listing::-webkit-scrollbar {
