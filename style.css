@@ -76,9 +76,10 @@ main {
   display: flex;
   z-index: 30;
   align-items: center;
-  height: 57vh;
+  height: 52vh;
   width: 100vw;
   position: relative;
+  top: 30px;
   right: calc(-100vw + 50px);
   border: 1px solid white;
   border-radius: 20px;
@@ -100,7 +101,7 @@ main {
   color: black;
   text-align: center;
   width: 50px;
-  height: 60vh;
+  height: 52vh;
   border-radius: 0px 20px 20px 0px;
   background-color: white;
   cursor: pointer;
@@ -127,12 +128,13 @@ footer {
   align-items: center;
   margin: auto;
   width: 100vw;
-  height: 8vh;
+  height: 10vh;
 }
-span {
+.spanFooter {
   display: block;
   font-size: 1rem;
   color: white;
+  padding-bottom: 5px;
 }
 p {
   font-size: 1rem;
@@ -144,7 +146,7 @@ p {
   transition: 1s all ease-in-out;
   padding: 5px 20px;
   font-family: arial;
-  font-size: 1em;
+  font-size: 20px;
   color: #ffffff;
   background-color: #116b9f;
   border-radius: 24px;
@@ -205,7 +207,7 @@ h3 {
   color: white;
   z-index: 60;
   font-size: 30px;
-  height: 4vh;
+  height: 6vh;
   width: 80%;
   margin: auto;
   border-bottom: 1px solid white;
@@ -228,7 +230,18 @@ h3 {
   box-shadow: 3px 3px 12px #444444;
 }
 
+.final {
+  line-height: 30px;
+}
+
 @media screen and (min-width: 600px) {
+  .todo,
+  h3,
+  .user,
+  .score {
+    font-size: 20px;
+  }
+
   .m2 {
     padding: 10px;
     width: 90vw;

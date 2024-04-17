@@ -39,8 +39,8 @@ function createTodoElement(key, value) {
   newTodo.classList.add("todo");
   newTodo.dataset.key = key; // Use data-key to relate DOM elements with localStorage keys
   let values = value.split(",");
-  console.log(values);
-  newTodo.innerHTML = `<h3>${values[0]}</h3><p class="user">${values[1]} | ${values[2]} | montant: <b class="final">${values[3]}</b></p><hr>`;
+  // console.log(values);
+  newTodo.innerHTML = `<h3>${values[0]}</h3><p class="user">${values[1]} | ${values[2]} | <br>Montant: <b class="final">${values[3]}</b></p><hr>`;
   listing.appendChild(newTodo);
 }
 
@@ -55,7 +55,7 @@ function loadTodos() {
 function addTodoToLocalStorage(users, tache, heure, montant) {
   const uid = new ShortUniqueId({ length: 10 });
   const uniqueId = uid.rnd();
-  console.log(uniqueId);
+  // console.log(uniqueId);
   localStorage.setItem(uniqueId, `${users},${tache},${heure},${montant}`);
   createTodoElement(uniqueId, `${users},${tache},${heure},${montant}`);
 }
@@ -108,9 +108,8 @@ btnTotal.addEventListener("click", () => {
   let montantFinal = document.querySelectorAll(".final");
   console.log(montantFinal);
   for (let i = 0; i < montantFinal.length; i++) {
-    m = parseFloat(montantFinal[i].innerText).toFixed(2);
-    n = parseFloat(n) + parseFloat(m);
-    console.log(n);
+    m = parseFloat(montantFinal[i].innerText);
+    n = n + m;
   }
-  score.innerHTML = n + "€";
+  score.innerHTML = n.toFixed(2) + " € TTC";
 });
